@@ -1,8 +1,5 @@
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -11,18 +8,18 @@ body {
 
 p {
   color: #524c56;
-  font-size: 160%;
+  font-size: 110%;
   line-height: 155%;
-  padding: 3%;
+  padding: 5%;
   text-indent: 2%;
   text-align: justify;
 }
 
 h3 {
-  font-size: 175%;
+  font-size: 125%;
   line-height: 155%;
   font-weight: 500;
-  color: #524c56;
+  color: #554f58;
   text-align: center;
   text-transform: uppercase;
   padding: 0;
@@ -35,7 +32,7 @@ a {
 }
 
 a:hover {
-  color: #c3d7df;
+  color: #749aa8;
 }
 
 img {
@@ -44,9 +41,19 @@ img {
   max-width: 100%;
   height: auto;
   width: auto;
-  margin-bottom: -4px;
 }
 
+.header-inner {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+  background-color: #d1dae0;
+}
+
+.slide-wrap {
+  padding-top: 120px;
+}
 #wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -68,7 +75,7 @@ header {
 header #logo {
   margin: 20px;
   float: left;
-  width: 60px;
+  width: 70px;
 }
 /* Navigation */
 nav {
@@ -86,13 +93,13 @@ ul {
 }
 
 nav ul li a {
-  color: #6991ac;
+  color: #5d7c91;
 }
 
 nav ul li {
-  font-size: 150%;
+  font-size: 130%;
   display: inline-block;
-  padding: 10px;
+  padding: 15px;
 }
 
 .current {
@@ -108,8 +115,8 @@ nav ul li {
 
 .icon-wrap {
   margin: 0 auto;
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   background-color: #6991ac;
   border-radius: 50%;
   text-align: center;
@@ -119,7 +126,7 @@ nav ul li {
 .icon-wrap i {
   text-align: center;
   color: #fff;
-  font-size: 450%;
+  font-size: 350%;
   padding: 20%;
 }
 
@@ -151,7 +158,7 @@ nav ul li {
 }
 
 footer {
-  background: #2c3e50;
+  background: #6690bb;
   width: 100%;
   overflow: auto;
 }
@@ -178,8 +185,8 @@ footer {
 }
 
 .footer-nav a {
-  font-size: 160%;
-  color: #c3d7df;
+  font-size: 120%;
+  color: #cbdae0;
   font-weight: 300;
 }
 
@@ -196,13 +203,79 @@ footer {
 }
 
 .social i {
-  font-size: 420%;
+  font-size: 300%;
   margin: 1%;
   padding: 5%;
   color: #c3d7df;
 }
 
-.social i:hover{
+.social i:hover {
   color: #f5f5f5;
 }
+
+@media (max-width: 768px) {
+  .one-third {
+    float: left;
+    width: 100%;
+  }
+  p {
+    font-size: 100%;
+    padding: 2%;
+  }
+
+  h3 {
+    font-size: 110%;
+  }
+
+  .left-col {
+    width: 100%;
+  }
+  img.sideimg {
+    display: none;
+  }
+
+  .icon-text-text {
+    width: 70%;
+    padding: 0;
+  }
+
+  #menu-icon {
+    display: inline-block;
+  }
+
+  nav:hover ul {
+    display: block;
+  }
+
+  nav ul,
+  nav:active ul {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    padding: 20px;
+    background: #f5f5f5;
+    border: 1px solid #a5bdcd;
+    right: 20px;
+    width: 30%;
+    opacity: 0.95;
+  }
+
+  nav li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .icon-wrap {
+    height: 80px;
+    width: 80px;
+  }
+
+  .icon-wrap i {
+    font-size: 250%;
+    padding-top: 27%;
+  }
+
+  .social i {
+    font-size: 200%;
+  }
 }
